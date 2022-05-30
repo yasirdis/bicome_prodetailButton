@@ -3,7 +3,7 @@ var widget = document.getElementsByClassName("card-figcaption-body");
 for(var i=0;i<widget.length;i++){
     const el = widget[i].closest('.card-figure');
 
-var url = el.querySelectorAll('.card-figure__link')[i].href;
+var url = el.querySelectorAll('.card-figure__link')[0].href;
 
     
 
