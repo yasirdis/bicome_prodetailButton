@@ -1,5 +1,7 @@
 window.onload=( function() {
-
+    {{#if page_type '==' 'default'}}
+   		 alert("sdcsdcdcsdcsdc");
+    {{/if}}
 var widget = document.getElementsByClassName("card-figcaption-body");
 for(var i=0;i<widget.length;i++){
     const el = widget[i].closest('.card-figure');
