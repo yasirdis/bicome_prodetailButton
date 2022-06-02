@@ -1,4 +1,5 @@
 window.onload=( function() {
+
 var widget = document.getElementsByClassName("card-figcaption-body");
 for(var i=0;i<widget.length;i++){
     const el = widget[i].closest('.card-figure');
@@ -11,5 +12,7 @@ widget[i].innerHTML = widget[i].innerHTML + '<a class="button button--small card
 
     
 }
+    var widget = document.getElementsByClassName("productView-options");
+widget[0].innerHTML = widget[0].innerHTML + '<button type="button">BOPIS</button>';
 
     });
