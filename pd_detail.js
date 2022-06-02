@@ -15,6 +15,8 @@ widget[i].innerHTML = widget[i].innerHTML + '<a class="button button--small card
     if(widget = document.getElementsByClassName("productView")[0]){
         var widget = document.getElementsByClassName("productView-options");
 widget[0].innerHTML = widget[0].innerHTML + '<button type="button" class="button button--primary">BOPIS</button>';
+        getLatLang();
+        alert("aaaaaaaaaaaaaa");
     }
     
 
