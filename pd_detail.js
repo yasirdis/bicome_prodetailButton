@@ -13,6 +13,6 @@ widget[i].innerHTML = widget[i].innerHTML + '<a class="button button--small card
     
 }
     var widget = document.getElementsByClassName("productView-options");
-widget[0].innerHTML = widget[0].innerHTML + '<button type="button">BOPIS</button>';
+widget[0].innerHTML = widget[0].innerHTML + '<button type="button" class="button button--primary">BOPIS</button>';
 
     });
