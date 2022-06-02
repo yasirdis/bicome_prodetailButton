@@ -16,8 +16,7 @@ widget[i].innerHTML = widget[i].innerHTML + '<a class="button button--small card
         
         var widget = document.getElementsByClassName("productView-options");
         getLatLang();
-widget[0].innerHTML = widget[0].innerHTML+
-        
+widget[0].innerHTML = widget[0].innerHTML+    
         '<input type="hidden" id="postalcodes"  value=""/>'+
 '<input type="hidden" id="stores" value="" />'+
 '<input type="hidden" id="addToCartUrl" value="" />'+
@@ -49,7 +48,7 @@ widget[0].innerHTML = widget[0].innerHTML+
     'Could not find stores for this product near your location. Please change the zipcode and try again.'+
     '</div>'+
     '</div>'+
-'</div>'
+'</div>';
     }
      require(['jquery',
     'BopisHosted',
