@@ -50,18 +50,5 @@ widget[0].innerHTML = widget[0].innerHTML+
     '</div>'+
 '</div>';
     }
-     require(['jquery',
-    'BopisHosted',
-     'Bopis'], function($) {
-        $('#quivers-config-option').change(function(){
-            getLatLang();
-
-        })
-        $('#zipcode').keypress(function(e){
-            if(e.which == 13){
-                changezipcode();
-            }
-        });
-    });
-
+    
     });
