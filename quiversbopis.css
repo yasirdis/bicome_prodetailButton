@@ -1,0 +1,397 @@
+body {
+    font-family: Arial, sans-serif;
+   /* background: url(http://www.shukatsu-note.com/wp-content/uploads/2014/12/computer-564136_1280.jpg) no-repeat;*/
+    background-size: cover;
+    height: 100vh;
+  }
+  
+  .error-content {
+    text-align: center;
+    font-family: Tahoma, Arial, sans-serif;
+    color: #06D85F;
+    margin: 80px 0;
+  }
+  
+  .box {
+    width: 40%;
+    margin: 0 auto;
+    background: rgba(255,255,255,0.2);
+    padding: 35px;
+    border: 2px solid #fff;
+    border-radius: 20px/50px;
+    background-clip: padding-box;
+    text-align: center;
+  }
+  
+  .button {
+    font-size: 1em;
+    padding: 10px;
+    color: #fff;
+    border: 2px solid #06D85F;
+  /*  border-radius: 20px/50px;*/
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    background: #06D85F;
+  }
+  .button:hover {
+    background: #06D85F;
+  }
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .overlay:target {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 5s ease-in-out;
+  }
+  
+  .popup h2 {
+    margin-top: 0;
+    color: #333;
+    font-family: Tahoma, Arial, sans-serif;
+  }
+  .popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+  }
+  .popup .close:hover {
+    color: #06D85F;
+  }
+  .popup .content {
+    max-height: 30%;
+    overflow: auto;
+  }
+  
+  @media screen and (max-width: 700px){
+    .box{
+      width: 70%;
+    }
+    .popup{
+      width: 70%;
+    }
+  }
+   .modal {
+    display: none; /* Hidden by default */
+  }
+  .pophead{
+      text-align: left;
+      font: normal normal bold 21px/25px Lato;
+      letter-spacing: 0px;
+      color: #0C223D;
+      opacity: 1;
+      padding-bottom: 10px;
+      border-bottom: 1px solid black;
+  }
+  .quiverswrapper{
+      background: #FFFFFF 0% 0% no-repeat padding-box;
+      /* box-shadow: 0px 3px 6px #00000014; */
+      opacity: 1;
+      padding: 5px;
+      
+  }
+  .zipcode{
+      text-align: left;
+      font: normal normal normal 15px/18px Lato;
+      letter-spacing: 0px;
+      color: #2B2B2B;
+      opacity: 1;
+      width: 15%
+  }
+  .labelzipcode{
+      text-align: left;
+      font: normal normal normal 17px/21px Lato;
+      letter-spacing: 0px;
+      color: #2B2B2B;
+      opacity: 1;
+      width: 50%
+  }
+  .quiversli{
+      background: #2D2F3B0F 0% 0% no-repeat padding-box;
+      box-shadow: 0px 3px 4px #004F7D1F;
+      border: 1px solid #2D2F3B;
+      border-radius: 6px;
+      opacity: 1;
+  }
+  .distance{
+      float:right;
+      text-align: left;
+      font: normal normal bold 15px/18px Lato;
+      letter-spacing: 0px;
+      color: #2B2B2B;
+      opacity: 1; 
+      font-weight: 500;
+  }
+  .store-checkbox {
+      text-align: left;
+      font: normal normal 600 15px/18px Lato;
+      letter-spacing: 0px;
+      color: #0C223D;
+      opacity: 1; 
+  }
+  .checkbox-label {
+      text-align: left;
+      font: normal normal 600 15px/18px Lato;
+      letter-spacing: 0px;
+      color: #0C223D;
+      opacity: 1; 
+  }
+  .store-checkbox{
+      background: #2D2F3B 0% 0% no-repeat padding-box;
+      opacity: 1; 
+  }
+  .store-time{
+      text-align: left;
+      letter-spacing: 0px;
+      color: #2B2B2B;
+      opacity: 1; 
+      font-size: small;
+      position: relative;
+    display: inline-block;
+  }
+  .popup-button{
+      border: 2px solid #2D2F3B;
+      border-radius: 4px;
+      opacity: 1; 
+      padding: 5px 10px;
+      min-width: 114px;
+      margin-left: 10px;
+  }
+  
+  .store-details{
+  text-align: left;
+  letter-spacing: 0px;
+  color: #2B2B2B;
+  opacity: 1; 
+  }
+  .store-time-image {
+      vertical-align: middle;
+     
+  }
+  .store-time:hover .tooltiptime {
+    visibility: visible;
+  }
+  
+  .store-time .tooltiptime::after {
+    content: "";
+    position: absolute;
+    top: 15%;
+    right: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent #7b7b7b26 transparent transparent;
+  }
+  .quivers-popup-buttons{
+      float:right;
+     
+  }
+  
+  .popup-storelist{
+      background: #FFFFFF 0% 0% no-repeat padding-box;
+      box-shadow: 0px 3px 4px #0000001F;
+      border: 1px solid #DADADA;
+      border-radius: 6px;
+      opacity: 1; 
+      padding: 16px;
+      margin-top: 5px;
+      margin-bottom: 10px;
+      padding-bottom: 50px;
+  }
+  .store-active{
+      background: #2D2F3B0F 0% 0% no-repeat padding-box;
+      box-shadow: 0px 3px 4px #004F7D1F;
+      border: 1px solid #2D2F3B;
+  }
+  .popup-footer{
+      background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px -3px 6px #0000001F;
+  opacity: 1;
+  }
+  .ship-instead {
+  text-align: left;
+  font: normal normal bold 13px/16px Lato;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  background: #2D2F3B 0% 0% no-repeat padding-box;
+  border-radius: 4px;
+  opacity: 1;
+  float: right;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-top: 12px;
+padding-bottom: 12px;
+  }
+  .tooltiptime {
+      
+    visibility: hidden;
+    width: 220px;
+    color: black;
+    background-color: #7b7b7b26;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    margin-left:10px;
+    margin-top:-5px;
+    /* Position the tooltip */
+    position: absolute;
+    left: 112px;
+    z-index: 1;
+  }
+  .popup-body {
+      max-height: 300px;
+  }
+  .time-digit{
+    text-align: left;
+    font: normal normal normal 13px/16px Lato;
+    letter-spacing: 0px;
+    color: #7B7B7B;
+    opacity: 1;
+  }
+  .time-digit{
+    text-align: left;
+    font: normal normal normal 13px/16px Lato;
+    letter-spacing: 0px;
+    color: #7B7B7B;
+    opacity: 1;
+  }
+  .time-day{
+    text-align: left;
+    font: normal normal 600 13px/16px Lato;
+    letter-spacing: 0px;
+    color: #2B2B2B;
+    opacity: 1;
+  }
+  .times{
+    float :left;
+    width: 220px;
+  }
+
+
+  #product-addtocart-button {
+    min-width: 248px !important;
+    min-height: 53px !important;
+}
+
+#product-pickitup-button {
+  /* float: left; */
+  min-width: 248px !important;
+  min-height: 53px !important;
+  float: left;
+  margin-bottom: 10px;
+  font-size: 1.8rem;
+}
+.quiverspickitup{
+  width: 100%;
+}
+@media all and (min-width:768px),
+print {
+  .quiverspickitup{
+    margin-right: 1%;
+    width: 49%;
+  }
+}
+
+.alert-danger {
+background-color: #f2dede;
+border-color: #ebccd1;
+padding: 15px;
+margin-bottom: 20px;
+border: 1px solid transparent;
+border-radius: 4px;
+margin-top: 20px;
+text-align: center;
+font-size: 14px;
+color:#a94442;
+}
+#zipcode {
+  width: 18%;
+}
+.quiverswrapper {
+  padding: 20px;
+}
+.selected {
+  margin-left: 12px;
+  font-weight: 505;
+}
+.instorelable {
+  float: right !important;
+}
+.quivers-store-status {
+  float: right !important;
+  font-weight: 505 !important;
+  margin-top: -44px !important;
+}
+.instorelable {
+  /* border-top: none !important; */
+  border-top: none !important;
+  float: right !important;
+}
+a.popup-button.pick-here.action.primary {
+  text-align: center;
+}
+.quivers-store-status {
+  font-weight: 725;
+  border: 3px solid black;
+  padding: 5px;
+  border-radius: 5px;
+  margin-top: 46px;
+  font-size: 10px;
+}
+h1.modal-title {
+  padding-left: 30px !important;
+}
+.modal-header{
+padding-right: 0px !important;
+padding-left: 0px !important;
+}
+.modal-popup .modal-inner-wrap {
+  width: 650px;
+}
+.tolltipicon {
+  position: absolute;
+  top: 0px;
+  left: 99px;
+  font-weight: bold;
+  border: 1px solid black;
+  border-radius: 50%;
+  /* padding: 1px; */
+  width: 17px;
+  text-align: center;
+  height: 17px;
+}
+a#top-cart-btn-checkout {
+  text-align: center;
+}
+
+button, a.action.primary {
+  border-radius: 3px;
+  margin-top: -4px;
+  }
+  .store-edit.action.primary {
+    padding: 2px 5px;
+}
