@@ -27,15 +27,9 @@ widget[0].innerHTML = widget[0].innerHTML+
  '   <input type="hidden" id="store" name="store"   value="" />'+
 '<input type="hidden" id="modalopen"   value="openModal" />'+
 '<input type="hidden" id="modalclose"    value="closeModal" />'+
- '   <div id="quiversmodalappend"  class="quiversaction" >'+
-  '                  <button type="button" '+
-   '                         title="Pick up"'+
-                            'class="action primary quiverspickitup"'+
-    '                        onclick="addtocartpickup('openModal');"'+
-     '                       id="product-pickitup-button" >'+
-      '                  <span>"Pick up"</span>'+
-       '             </button>'+
-        '</div>'+
+  ' <button type="button" title="Pick up" class="action primary quiverspickitup" onclick="addtocartpickup('openModal');" id="product-pickitup-button" >Pick up'+
+       '</button>'
+
 '<div id="store-modal" style="display:none;">'+
     '<div class="quiverswrapper">'+
  '       <label class="labelzipcode">Showing location near zipcode:</label>'+
