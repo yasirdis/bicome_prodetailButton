@@ -29,20 +29,6 @@ widget[0].innerHTML = widget[0].innerHTML+
 '<input type="hidden" id="modalclose"    value="closeModal" />'+
   ' <button type="button" title="Pick up" class="action primary quiverspickitup" onclick="addtocartpickup('openModal');" id="product-pickitup-button" >Pick up'+
        '</button>'
-
-'<div id="store-modal" style="display:none;">'+
-    '<div class="quiverswrapper">'+
- '       <label class="labelzipcode">Showing location near zipcode:</label>'+
-  '      <input type="text" class="zipcode" id="zipcode" value="" >'+
-   '     <button type="button" onclick="changezipcode()"><i class="fa fa-search"></i></button>'+
-      '  <input type="hidden" class="edit" id="edit" value="">'+
-    '</div>'+
-    '<div class="popup-body" id="popup-body">'+
-    '<div class="alert alert-danger fade in alert-dismissible">'+
-    'Could not find stores for this product near your location. Please change the zipcode and try again.'+
-    '</div>'+
-    '</div>'+
-'</div>';
     }
     
     });
