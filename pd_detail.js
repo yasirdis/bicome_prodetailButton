@@ -16,17 +16,7 @@ widget[i].innerHTML = widget[i].innerHTML + '<a class="button button--small card
         
         var widget = document.getElementsByClassName("productView-options");
         getLatLang();
-widget[0].innerHTML = widget[0].innerHTML+    
-        '<input type="hidden" id="postalcodes"  value=""/>'+
-'<input type="hidden" id="stores" value="" />'+
-'<input type="hidden" id="addToCartUrl" value="" />'+
-'<input type="hidden" id="apibaseurl"  value="" />'+
-'<input type="hidden" id="sitebaseurl"  value="" />'+
-'<input type="hidden" id="custIp" name="custIp"  value="" />'+
-'<input type="hidden" id="searchterm" name="searchterm" value="" />'+
- '   <input type="hidden" id="store" name="store"   value="" />'+
-'<input type="hidden" id="modalopen"   value="openModal" />'+
-'<input type="hidden" id="modalclose"    value="closeModal" />'+
+widget[0].innerHTML = widget[0].innerHTML+
   ' <button type="button" title="Pick up" class="action primary quiverspickitup" onclick="addtocartpickup('openModal');" id="product-pickitup-button" >Pick up'+
        '</button>'
     }
