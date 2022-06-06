@@ -55,6 +55,7 @@ widget[0].innerHTML = widget[0].innerHTML+
 '</div>';
                 
 getLatLang();
+                                document.getElementById('searchterm').value='{{product.call_for_price}}';
     }
 
    
