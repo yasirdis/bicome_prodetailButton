@@ -35,7 +35,7 @@ widget[0].innerHTML = widget[0].innerHTML+
 '<input type="hidden" id="apibaseurl"  value="https://api.quiverstest.com/" />'+
 '<input type="hidden" id="sitebaseurl"  value="" />'+
 '<input type="hidden" id="custIp" name="custIp"  value="" />'+
-'<input type="hidden" id="searchterm" name="searchterm" value="" />'+
+'<input type="hidden" id="searchterm" name="searchterm" value="885256" />'+
  '   <input type="hidden" id="store" name="store"   value="" />'+
 '<input type="hidden" id="modalopen"   value="openModal" />'+
 '<input type="hidden" id="modalclose"    value="closeModal" />'+
