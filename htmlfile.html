@@ -1,0 +1,7 @@
+{{inject "myProductName" product.title}}
+
+<script>
+var jsContext = JSON.parse({{jsContext}});
+console.log(jsContext.myProductName);
+// results in: "BigCommerce Coffee Mug"
+</script>
