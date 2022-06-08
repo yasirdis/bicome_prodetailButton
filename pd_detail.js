@@ -11,6 +11,7 @@ widget[i].innerHTML = widget[i].innerHTML + '<a class="button button--small card
     
 }
             if(document.getElementsByClassName("productView")[0]){
+                alert({{product.id}});
         var widget = document.getElementsByClassName("productView-options");
 widget[0].innerHTML = widget[0].innerHTML+
 '<input type="hidden" id="config-searchterm" name="config-searchterm" value="" />'+
@@ -55,8 +56,7 @@ widget[0].innerHTML = widget[0].innerHTML+
 '</div>';
                 
 getLatLang();
-                    console.log({{product.id}});
-                                document.getElementById('searchterm').value='{{product.call_for_price}}';
+                    
     }
 
    
