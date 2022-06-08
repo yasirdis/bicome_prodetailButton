@@ -1,4 +1,11 @@
 var widget = document.getElementsByClassName("card-figcaption-body");
+   function on() {
+  document.getElementById("overlay").style.display = "block";
+}
+
+function off() {
+  document.getElementById("overlay").style.display = "none";
+}
 for(var i=0;i<widget.length;i++){
     const el = widget[i].closest('.card-figure');
 
@@ -11,7 +18,7 @@ widget[i].innerHTML = widget[i].innerHTML + '<a class="button button--small card
     
 }
             if(document.getElementsByClassName("productView")[0]){
-                alert({{product.id}});
+               
         var widget = document.getElementsByClassName("productView-options");
 widget[0].innerHTML = widget[0].innerHTML+
 '<input type="hidden" id="config-searchterm" name="config-searchterm" value="" />'+
@@ -32,32 +39,16 @@ widget[0].innerHTML = widget[0].innerHTML+
  '   <input type="hidden" id="store" name="store"   value="" />'+
 '<input type="hidden" id="modalopen"   value="openModal" />'+
 '<input type="hidden" id="modalclose"    value="closeModal" />'+
-   '<div id="quiversmodalappend"  class="quiversaction" >'+
-                    '<button type="button"'+ 
-                            'title="Pick Up"'+
-                            'class="action primary quiverspickitup button button--primary"'+
-                            'onclick="addtocartpickup(\'openModal\');"'+
-                            'id="product-pickitup-button" >'+
-                        '<span>Pick up</span>'+
-                    '</button>'+
-        '</div>'+
-                '<div id="store-modal" style="display:none;">'+
-    '<div class="quiverswrapper">'+
- '       <label class="labelzipcode">Showing location near zipcode:</label>'+
-  '      <input type="text" class="zipcode" id="zipcode" value="" >'+
-   '     <button type="button" onclick="changezipcode()"><i class="fa fa-search"></i></button>'+
-      '  <input type="hidden" class="edit" id="edit" value="">'+
-    '</div>'+
-    '<div class="popup-body" id="popup-body">'+
-    '<div class="alert alert-danger fade in alert-dismissible">'+
-    'Could not find stores for this product near your location. Please change the zipcode and try again.'+
-    '</div>'+
-    '</div>'+
+   '<div id="overlay" onclick="off()"></div>'+
+'<div style="padding:20px">'+
+  '<h2>Overlay</h2>'+
+  '<p>Add an overlay effect to the page content (100% width and height with a black background color with 50% opacity).</p>'+
+  '<button onclick="on()">Turn on overlay effect</button>'+
 '</div>';
                 
 getLatLang();
                     
     }
 
-   
+
     
