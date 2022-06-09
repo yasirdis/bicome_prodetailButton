@@ -6,8 +6,9 @@ var url = el.querySelectorAll('.card-figure__link')[0].href;
 widget[i].innerHTML = widget[i].innerHTML + '<a class="button button--small card-figcaption-button " href='+url+'>Product detail</a>';
     
 }
-            if(document.getElementsByClassName("productView")[0]){
-                  var head  = document.getElementsByTagName('head')[0];
+
+    if(document.getElementsByClassName("productView")[0]){
+    var head  = document.getElementsByTagName('head')[0];
     var link  = document.createElement('link');
     link.rel  = 'stylesheet';
     link.type = 'text/css';
@@ -15,6 +16,7 @@ widget[i].innerHTML = widget[i].innerHTML + '<a class="button button--small card
     link.media = 'all';
     head.appendChild(link);
     
+
     var overlay  = document.createElement('link');
     overlay.rel  = 'stylesheet';
     overlay.type = 'text/css';
@@ -22,7 +24,11 @@ widget[i].innerHTML = widget[i].innerHTML + '<a class="button button--small card
     overlay.media = 'all';
     head.appendChild(overlay);
       
-                
+      const script = document.createElement("script");
+  script.src = 'https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js';
+  script.type = 'text/javascript';
+  document.head.appendChild(script);
+        
         var widget = document.getElementsByClassName("productView-options");
 widget[0].innerHTML = widget[0].innerHTML+
 '<input type="hidden" id="config-searchterm" name="config-searchterm" value="" />'+
