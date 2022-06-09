@@ -74,6 +74,7 @@ widget[0].innerHTML = widget[0].innerHTML+
     '</div>'+
     '</div>'+
 '</div>';
+    var footer = document.getElementsByTagName('footer');
      const bopishosted = document.createElement("script");
   bopishosted.src = 'https://d3su35eq9vvgkf.cloudfront.net/bopishosted.min.js';
   bopishosted.type = 'text/javascript';
