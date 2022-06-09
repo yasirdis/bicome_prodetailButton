@@ -39,17 +39,7 @@ widget[0].innerHTML = widget[0].innerHTML+
  '   <input type="hidden" id="store" name="store"   value="" />'+
 '<input type="hidden" id="modalopen"   value="openModal" />'+
 '<input type="hidden" id="modalclose"    value="closeModal" />'+
-   '<div id="overlay" onclick="off()">'+
-          '<div id="quiversmodalappend"  class="quiversaction" >'+
-                    '<button type="button"'+ 
-                            'title="<?= $block->escapeHtmlAttr("Pick up") ?>"'+
-                            'class="action primary quiverspickitup"'+
-                            'onclick="addtocartpickup(\'openModal\');"'+
-                            'id="product-pickitup-button" >'+
-                        '<span><?= $block->escapeHtml("Pick up") ?></span>'+
-                    '</button>
-        '</div>
-   
+   '<div id="overlay" onclick="off()">'
                '<div id="store-modal" style="display:none;">'+
     '<div class="quiverswrapper">'+
         '<label class="labelzipcode">Showing location near zipcode:</label>'+
