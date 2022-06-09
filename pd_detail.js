@@ -64,12 +64,12 @@ widget[0].innerHTML = widget[0].innerHTML+
                     '<button type="button"'+ 
                             'title="Pick Up"'+
                             'class="action primary quiverspickitup button button--primary"'+
-                            onclick="on()"
+                            'onclick="on()"'+
                             'id="product-pickitup-button" >'+
                         '<span>Pick up</span>'+
                     '</button>'+
         '</div>'+
-    '<div id="overlay" onclick="off()">'
+    '<div id="overlay" onclick="off()">'+
                 '<div id="store-modal" style="display:none;">'+
     '<div class="quiverswrapper">'+
  '       <label class="labelzipcode">Showing location near zipcode:</label>'+
