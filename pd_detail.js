@@ -3,10 +3,26 @@ for(var i=0;i<widget.length;i++){
     const el = widget[i].closest('.card-figure');
 var url = el.querySelectorAll('.card-figure__link')[0].href;
     
-widget[i].innerHTML = widget[i].innerHTML + '<a class="button button--small card-figcaption-button " data-product-id="103" href='+url+'>Product detail</a>';
+widget[i].innerHTML = widget[i].innerHTML + '<a class="button button--small card-figcaption-button " href='+url+'>Product detail</a>';
     
 }
             if(document.getElementsByClassName("productView")[0]){
+                  var head  = document.getElementsByTagName('head')[0];
+    var link  = document.createElement('link');
+    link.rel  = 'stylesheet';
+    link.type = 'text/css';
+    link.href = 'quiversbopis.css';
+    link.media = 'all';
+    head.appendChild(link);
+    
+    var overlay  = document.createElement('link');
+    overlay.rel  = 'stylesheet';
+    overlay.type = 'text/css';
+    overlay.href = 'overlay.css';
+    overlay.media = 'all';
+    head.appendChild(overlay);
+      
+                
         var widget = document.getElementsByClassName("productView-options");
 widget[0].innerHTML = widget[0].innerHTML+
 '<input type="hidden" id="config-searchterm" name="config-searchterm" value="" />'+
