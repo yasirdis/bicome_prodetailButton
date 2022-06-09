@@ -29,6 +29,7 @@ widget[0].innerHTML = widget[0].innerHTML+
 '<input type="hidden" id="apikey" name="apikey"  value="apikey 114c90ac-c5a4-406e-a036-cf97eb3b8367" />'+
 '<input type="hidden" id="marketplace" name="marketplace"  value="3512671f-1fd7-4dbe-84fd-0cd7052f0f55" />'+
 '<input type="hidden" id="userPostalcode" name="userPostalcode"  value="" />'+
+    '<input type="hidden" id="plugin" name="plugin"  value="shopware" />'+
 '<input type="hidden" id="shipping" name="shipping"  value="" />'+
 '<div id="Quiver_loader">llllkkkkkkkk</div>'+
 '<input type="hidden" id="lat" value=""/>'+
