@@ -41,7 +41,7 @@ if(document.getElementsByClassName("productView")[0]){
         
         var widget = document.getElementsByClassName("productView-options");
 widget[0].innerHTML = widget[0].innerHTML+
-'<input type="hidden" id="config-searchterm" name="config-searchterm" value="" />'+
+'<input type="hidden" id="config-searchterm" name="config-searchterm" value="12658742" />'+
 '<input type="hidden" id="apikey" name="apikey"  value="apikey 114c90ac-c5a4-406e-a036-cf97eb3b8367" />'+
 '<input type="hidden" id="marketplace" name="marketplace"  value="3512671f-1fd7-4dbe-84fd-0cd7052f0f55" />'+
 '<input type="hidden" id="userPostalcode" name="userPostalcode"  value="" />'+
