@@ -74,7 +74,6 @@ widget[0].innerHTML = widget[0].innerHTML+
     '</div>'+
     '</div>'+
 '</div>';
-    
-getLatLang();
+   
                                 
     }
