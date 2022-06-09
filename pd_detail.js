@@ -1,6 +1,7 @@
 var widget = document.getElementsByClassName("card-figcaption-body");
    function on() {
   document.getElementById("overlay").style.display = "block";
+      addtocartpickup("openModal");
 }
 
 function off() {
