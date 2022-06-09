@@ -1,3 +1,11 @@
+   function on() {
+  document.getElementById("overlay").style.display = "block";
+      addtocartpickup("openModal");
+}
+
+function off() {
+  document.getElementById("overlay").style.display = "none";
+}
 var widget = document.getElementsByClassName("card-figcaption-body");
 for(var i=0;i<widget.length;i++){
     const el = widget[i].closest('.card-figure');
@@ -56,11 +64,12 @@ widget[0].innerHTML = widget[0].innerHTML+
                     '<button type="button"'+ 
                             'title="Pick Up"'+
                             'class="action primary quiverspickitup button button--primary"'+
-                            'onclick="addtocartpickup(\'openModal\');"'+
+                            onclick="on()"
                             'id="product-pickitup-button" >'+
                         '<span>Pick up</span>'+
                     '</button>'+
         '</div>'+
+    '<div id="overlay" onclick="off()">'
                 '<div id="store-modal" style="display:none;">'+
     '<div class="quiverswrapper">'+
  '       <label class="labelzipcode">Showing location near zipcode:</label>'+
@@ -73,6 +82,7 @@ widget[0].innerHTML = widget[0].innerHTML+
     'Could not find stores for this product near your location. Please change the zipcode and try again.'+
     '</div>'+
     '</div>'+
+   '</div>'+
 '</div>';
    
                                 
