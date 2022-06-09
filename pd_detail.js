@@ -11,14 +11,14 @@ widget[i].innerHTML = widget[i].innerHTML + '<a class="button button--small card
     var link  = document.createElement('link');
     link.rel  = 'stylesheet';
     link.type = 'text/css';
-    link.href = 'quiversbopis.css';
+    link.href = 'https://cdn.jsdelivr.net/gh/yasirdis/bicome_prodetailButton@48a49f056d65728d4162d3245de25ea4bdf2af2c/quiversbopis.css';
     link.media = 'all';
     head.appendChild(link);
     
     var overlay  = document.createElement('link');
     overlay.rel  = 'stylesheet';
     overlay.type = 'text/css';
-    overlay.href = 'overlay.css';
+    overlay.href = 'https://cdn.jsdelivr.net/gh/yasirdis/bicome_prodetailButton@050b2eed49feb6e8284ec4e04e8572617b89ca03/overlay.css';
     overlay.media = 'all';
     head.appendChild(overlay);
       
