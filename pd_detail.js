@@ -79,8 +79,7 @@ widget[0].innerHTML = widget[0].innerHTML+
     '</div>'+
     '<div class="popup-body" id="popup-body">'+
     '<div class="alert alert-danger fade in alert-dismissible">'+
-    'Could not find stores for this product near your location. Please change the zipcode and try again.'+
-    '</div>'+
+    'Could not find stores for this product near your location. Please change the zipcode and try again.'+ 
     '</div>'+
    '</div>'+
 '</div>';
